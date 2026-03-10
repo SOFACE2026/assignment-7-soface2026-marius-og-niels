@@ -19,6 +19,11 @@ public:
     // multiply elements with a constant factor on the calling thread
     void multiply_single_threaded(T factor)
     {   
+        for (int i = 0; i < n_rows; i++){
+            for (int j = 0; j < n_cols; j++){
+                n_rows[i[j]] *= factor;
+            }
+        }
     }
 
     // split the matrix in n parts and use multiple spawn one thread per paSrtition to perform the multiplication.
