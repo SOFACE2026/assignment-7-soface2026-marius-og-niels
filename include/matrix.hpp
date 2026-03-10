@@ -18,7 +18,7 @@ public:
 
     // multiply elements with a constant factor on the calling thread
     void multiply_single_threaded(T factor)
-    {
+    {   
     }
 
     // split the matrix in n parts and use multiple spawn one thread per paSrtition to perform the multiplication.
